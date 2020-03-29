@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>Сar sharing</title>
+    <link rel="stylesheet" href="/./assets/styles/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="order">
+          <div class="menu order__menu">
+            <div class="menu__burger"><a class="menu__burger-button" href="#"><span class="menu__burger-lines"></span></a>
+              <nav class="menu__burger-nav">
+              </nav>
+              <div class="menu__burger-overlay"></div>
+            </div>
+            <button class="menu__language-btn">
+              <div class="menu__language"></div>
+            </button>
+          </div>
+          <div class="order__main">
+            <div class="header order__header">
+              <div class="header__wrap">
+                <div class="header__name">Need for drive</div>
+                <div class="header__location-wrap">
+                  <svg class="header__location-icon">
+                    <use xlink:href="/./assets/sprite.svg#location-usage"></use>
+                  </svg>
+                  <div class="header__location">Ульяновск</div>
+                </div>
+              </div>
+            </div>
+            <div class="step order__step">
+              <div class="step__wrapper"><a class="step__name step__name--active">Местоположение</a>
+                <svg class="step__pointer">
+                  <use xlink:href="/./assets/sprite.svg#Pointer-usage"></use>
+                </svg>
+              </div>
+              <div class="step__wrapper"><a class="step__name">Модель</a>
+                <svg class="step__pointer">
+                  <use xlink:href="/./assets/sprite.svg#Pointer-usage"></use>
+                </svg>
+              </div>
+              <div class="step__wrapper"><a class="step__name">Дополнительно</a>
+                <svg class="step__pointer">
+                  <use xlink:href="/./assets/sprite.svg#Pointer-usage"></use>
+                </svg>
+              </div>
+              <div class="step__wrapper"><a class="step__name">Итого</a>
+                <svg class="step__pointer">
+                  <use xlink:href="/./assets/sprite.svg#Pointer-usage"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="order__sections">
+              <div class="search order__search">
+                <div class="search__step search__step--active">
+                  <form class="search__form-location">
+                    <label>Город
+                      <input class="search__city" type="search" placeholder="Начните воодить город..." name="city">
+                    </label>
+                    <label>Пункт выдачи
+                      <input class="search__point" type="search" placeholder="Начните вводить пункт ..." name="point">
+                    </label>
+                  </form>
+                  <div class="search__map-wrp">
+                    <p class="search__map-text">Выбрать на карте:</p>
+                    <div class="image search__map"><img src="source/static/assets/images/carsharing/map.png" alt="map "></div>
+                  </div>
+                </div>
+                <div class="search__step">
+                  <form class="search__form-car">
+                    <input class="radio" type="radio" name="car" value="Все модели" id="all car" checked>
+                    <label for="all car">Все модели</label>
+                    <input class="radio" type="radio" name="car" value="Эконом" id="econom">
+                    <label for="econom">Эконом</label>
+                    <input class="radio" type="radio" name="car" value="Премиум" id="premium">
+                    <label for="premium">Премиум</label>
+                  </form>
+                  <div class="search__catalog">
+                    <div class="search__car">
+                      <div class="search__car-name">ELANTRA</div>
+                      <div class="search__car-price">12 000 - 25 000 ₽</div>
+                      <div class="image search__car-image"><img src="source/static/assets/images/carsharing/catalog/image 1.png" alt="car"></div>
+                    </div>
+                    <div class="search__car">
+                      <div class="search__car-name">i30 N</div>
+                      <div class="search__car-price">12 000 - 25 000 ₽</div>
+                      <div class="image search__car-image"><img src="source/static/assets/images/carsharing/catalog/image 2.png" alt="car"></div>
+                    </div>
+                    <div class="search__car">
+                      <div class="search__car-name">CRETA</div>
+                      <div class="search__car-price">12 000 - 25 000 ₽</div>
+                      <div class="image search__car-image"><img src="source/static/assets/images/carsharing/catalog/image 3.png" alt="car"></div>
+                    </div>
+                    <div class="search__car">
+                      <div class="search__car-name">SONATA</div>
+                      <div class="search__car-price">10 000 - 32 000 ₽</div>
+                      <div class="image search__car-image"><img src="source/static/assets/images/carsharing/catalog/image 4.png" alt="car"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="search__step">
+                  <form class="search__additional">
+                    <p>Цвет</p>
+                    <div class="search__color">
+                      <input class="radio" type="radio" name="color" value="Любой" id="all color">
+                      <label for="all color">Любой</label>
+                      <input class="radio" type="radio" name="color" value="Красный" id="red">
+                      <label for="red">Красный</label>
+                      <input class="radio" type="radio" name="color" value="Голубой" id="blue" checked>
+                      <label for="blue">Голубой</label>
+                    </div>
+                    <p>Дата аренды</p>
+                    <div class="search__date">
+                      <label>C
+                        <input class="search__city" type="datetime" placeholder="Введите дату и время" name="start">
+                      </label>
+                      <label>По
+                        <input class="search__point" type="datetime" placeholder="Введите дату и время" name="finish">
+                      </label>
+                    </div>
+                    <p>Тариф</p>
+                    <div class="search__tariff"> 
+                      <input class="radio" type="radio" name="tariff" value="Минутный" id="min">
+                      <label for="min">Поминутно, 7₽/мин</label>
+                      <input class="radio" type="radio" name="tariff" value="По суточно" id="day" checked>
+                      <label for="day">На сутки, 1999 ₽/сутки</label>
+                    </div>
+                    <p>Доп услуги</p>
+                    <div class="search__service">
+                      <input class="checkbox" type="checkbox" id="full tank" checked>
+                      <label for="full tank">Полный бак, 500р</label>
+                      <input class="checkbox" type="checkbox" id="baby chair">
+                      <label for="baby chair">Детское кресло, 200р</label>
+                      <input class="checkbox" type="checkbox" id="right wheel">
+                      <label for="right wheel">Правый руль, 1600р</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="search__step">
+                  <div class="search__order">
+                    <div class="search__order-wrapper">
+                      <div class="search__order-confirmation">Ваш заказ подтверждён</div>
+                      <div class="search__order-model">Hyndai, i30 N</div>
+                      <div class="search__order-number">K 761 HA 73</div>
+                      <div class="search__order-tank"><b>Топливо</b> 100%</div>
+                      <div class="search__order-date"><b>Доступна с</b> 12.06.2019 12:00</div>
+                    </div>
+                    <div class="image search__order-image"><img src="source/static/assets/images/carsharing/catalog/image 2.png" alt="car"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="conclusion order__conclusion">
+                <div class="conclusion__title">Ваш заказ:</div>
+                <ul>
+                  <div class="conclusion__items">
+                    <li><span class="conclusion__item">Пункт выдачи</span><span class="conclusion__location">Ульяновск, Нариманова 42</span></li>
+                    <li><span class="conclusion__item">Модель</span><span class="conclusion__model">Hyndai, i30 N</span></li>
+                    <li><span class="conclusion__item">Длительность аренды</span><span class="conclusion__time">1д 2ч</span></li>
+                    <li><span class="conclusion__item">Тариф</span><span class="conclusion__tariff"></span></li>
+                    <li><span class="conclusion__item">Полный бак</span><span class="conclusion__tank">Да</span></li>
+                  </div>
+                </ul>
+                <div class="conclusion__price-wrp">
+                  <p class="conclusion__price-text">Цена:</p>
+                  <div class="conclusion__price">16 000 ₽</div>
+                </div>
+                <button class="button conclusion__button"><span class="button__text">Заказать</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/./assets/scripts/main.bundle.js" async defer></script>
+  </body>
+</html>
